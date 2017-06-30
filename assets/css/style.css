@@ -74,8 +74,6 @@ body {
 #cabecera, #cabecera img, #newsfeed img, #imagenes img, #imagenes_derecha .grande, .brand img, .seccioncuatro_imagenes .grande_cuatro, .seccioncinco_imagenes .imagen_grande {
   width: 100%;
   margin: 20px auto;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
 .chica {
@@ -84,5 +82,14 @@ body {
 
 .imagen_pequena {
   width: 10%; }
+
+hr {
+  border: solid 2px #4285f4; }
+
+.margen {
+  margin-bottom: 23px; }
+
+p {
+  color: #414549; }
 
 /*# sourceMappingURL=style.css.map */
