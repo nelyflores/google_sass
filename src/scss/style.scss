@@ -1,0 +1,83 @@
+$fuente:'Open Sans', sans-serif;
+$logo_ancho:55px;
+$logo_alinear:center;
+$ul_margen:50px;
+$menu_horizontal:inline;
+$menu_padding:12px;
+$menu_magen:9px;
+$menu_tamanofuente:14px;
+$imagencircular:8.5%;
+$imagenenCirculo:50%;
+@import 'grid';
+body{
+	font-family:$fuente;
+}
+#logo{
+	height: $logo_ancho;
+	align-content: center;
+}
+#menu{
+
+
+	margin-left: $ul_margen;
+
+	li{
+		display:$menu_horizontal;
+		padding-left: $menu_padding;
+		padding-right: $menu_padding;
+		margin-right:$menu_magen;
+		font-size: $menu_tamanofuente;
+	}
+}
+#cabecera{
+
+	width: 100%;
+ margin: 20px auto;
+ -webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+				 box-sizing: border-box;
+				 img{
+					@extend #cabecera ;
+				 }
+}
+#newsfeed{
+	img{
+	@extend #cabecera
+	}
+}
+#imagenes{
+	img{
+	@extend #cabecera
+	}
+}
+#imagenes_derecha{
+	.grande{
+	@extend #cabecera
+	}
+}
+.chica{
+	width:$imagencircular;
+	border-radius:$imagenenCirculo
+}
+.brand{
+img{
+	@extend #cabecera
+	}
+}
+
+.seccioncuatro_imagenes{
+	.grande_cuatro{
+
+			@extend #cabecera
+
+	}
+}
+.seccioncinco_imagenes{
+	.imagen_grande{
+		@extend #cabecera
+	}
+}
+.imagen_pequena{
+	width: 10%;
+
+}
